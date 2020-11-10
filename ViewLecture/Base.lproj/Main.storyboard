@@ -27,6 +27,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="whenButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VaY-Bg-tQz"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IpQ-1J-1NU">
                                 <rect key="frame" x="87" y="365" width="240" height="128"/>
@@ -41,10 +44,22 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nc-zR-bzJ">
+                                <rect key="frame" x="288" y="550" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cool"/>
+                                <connections>
+                                    <action selector="whenCoolButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEC-HI-cYY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="GKL-dn-IjK" id="sle-yF-KWp"/>
+                        <outlet property="startNumberTextField" destination="j5X-TG-rnM" id="W46-A9-ij8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
